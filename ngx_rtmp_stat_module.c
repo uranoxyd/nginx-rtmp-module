@@ -515,11 +515,11 @@ ngx_rtmp_stat_live(ngx_http_request_t *r, ngx_chain_t ***lll,
                     NGX_RTMP_STAT_L("</timestamp>");
 
                     if (ctx->publishing) {
-                        NGX_RTMP_STAT_L("<publishing/>");
+                        NGX_RTMP_STAT_L("<publishing>1</publishing>");
                     }
 
                     if (ctx->active) {
-                        NGX_RTMP_STAT_L("<active/>");
+                        NGX_RTMP_STAT_L("<active>1</active>");
                     }
 
                     rctx = ngx_rtmp_get_module_ctx(s, ngx_rtmp_record_module);
